@@ -121,7 +121,7 @@
     <!-- Registration Form -->
     <div class="form-container">
       <h2>Register Now</h2>
-      <form action="#" method="POST">
+      <form action="https://formsubmit.co/swim.egypt.academy@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Full Name" required />
         <input type="number" name="age" placeholder="Age" required />
 
@@ -141,6 +141,12 @@
         </select>
 
         <textarea name="message" placeholder="Any additional information (optional)"></textarea>
+
+        <!-- Hidden Inputs -->
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://nmy33.github.io/swimegyptacademy/thank-you.html">
+
         <input type="submit" class="button submit-btn" value="Submit Registration" />
       </form>
     </div>
