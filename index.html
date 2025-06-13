@@ -14,6 +14,13 @@
       color: #184663;
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     .logo-img {
       width: 130px;
       height: auto;
@@ -54,7 +61,8 @@
       background: #184663; /* Indigo Dye */
       color: #F7F9F9;
     }
-     .form-container {
+
+    .form-container {
       background: #f7f9f9;
       padding: 20px 40px;
       margin-top: 40px;
@@ -83,32 +91,32 @@
     .submit-btn:hover {
       background-color: #184663;
     }
-
   </style>
 </head>
 <body>
-  <!-- Logo image -->
-  <img src="Logo_2.JPG" alt="SEA Logo" class="logo-img" />
+  <div class="container">
+    <!-- Logo image -->
+    <img src="Logo_2.JPG" alt="SEA Logo" class="logo-img" />
 
-  <!-- Academy Name -->
-  <div class="logo-text">Swim Egypt Academy</div>
-  <div class="tagline">Creating Champions 🏆</div>
+    <!-- Academy Name -->
+    <div class="logo-text">Swim Egypt Academy</div>
+    <div class="tagline">Creating Champions 🏆</div>
 
-  <!-- Links -->
-  <a class="button" href="https://www.instagram.com/swim.egypt.academy">📸 Instagram</a>
-  <a class="button" href="https://www.facebook.com/swimegyptacademySEA">📘 Facebook</a>
-  <a class="button" href="https://wa.me/201111532684">📞 WhatsApp</a>
-  <a class="button" href="tel:+201118838875">📱 Call</a>
-  <a class="button" href="https://maps.google.com/?q=The+Guard+Hotel,+Sharton+Al+Matar">📍 Location - The Guard Hotel</a>
-  <a class="button" href="https://maps.google.com/?q=Diamond+Club,+Maadi">📍 Location - Diamond Club Maadi</a>
+    <!-- Links -->
+    <a class="button" href="https://www.instagram.com/swim.egypt.academy">📸 Instagram</a>
+    <a class="button" href="https://www.facebook.com/swimegyptacademySEA">📘 Facebook</a>
+    <a class="button" href="https://wa.me/201111532684">📞 WhatsApp</a>
+    <a class="button" href="tel:+201118838875">📱 Call</a>
+    <a class="button" href="https://maps.google.com/?q=The+Guard+Hotel,+Sharton+Al+Matar">📍 Location - The Guard Hotel</a>
+    <a class="button" href="https://maps.google.com/?q=Diamond+Club,+Maadi">📍 Location - Diamond Club Maadi</a>
+  </div>
 
-   <!-- Registration Form -->
+  <!-- Registration Form -->
   <div class="form-container">
     <h2>Register Now</h2>
     <form action="#" method="POST">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="number" name="age" placeholder="Age" required />
-    
       <select name="level" required>
         <option value="">Select Level</option>
         <option value="beginner">Beginner</option>
@@ -124,5 +132,6 @@
       <textarea name="message" placeholder="Any additional information (optional)"></textarea>
       <input type="submit" class="button submit-btn" value="Submit Registration" />
     </form>
+  </div>
 </body>
 </html>
