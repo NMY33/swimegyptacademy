@@ -117,13 +117,20 @@
       <a class="button" href="https://maps.google.com/?q=The+Guard+Hotel,+Sharton+Al+Matar">📍 Location - The Guard Hotel</a>
       <a class="button" href="https://maps.google.com/?q=Diamond+Club,+Maadi">📍 Location - Diamond Club Maadi</a>
     </div>
-
     <!-- Registration Form -->
     <div class="form-container">
       <h2>Register Now</h2>
-      <form action="https://formsubmit.co/swim.egypt.academy@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="number" name="age" placeholder="Age" required />
+      <form action="https://formsubmit.co/swim.egypt.academy%40gmail.com" method="POST">
+        
+        <!-- Hidden Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://nmy33.github.io/swimegyptacademy/thank-you.html">
+        <input type="text" name="_honey" style="display:none"> <!-- Anti-bot -->
+
+        <!-- Visible Fields -->
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="number" name="age" placeholder="Age" required>
 
         <select name="level" required>
           <option value="">Select Level</option>
@@ -132,7 +139,7 @@
           <option value="advanced">Advanced</option>
         </select>
 
-        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required>
 
         <select name="branch" required>
           <option value="">Select Branch</option>
@@ -142,12 +149,7 @@
 
         <textarea name="message" placeholder="Any additional information (optional)"></textarea>
 
-        <!-- Hidden Inputs -->
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://nmy33.github.io/swimegyptacademy/thank-you.html">
-
-        <input type="submit" class="button submit-btn" value="Submit Registration" />
+        <input type="submit" class="button submit-btn" value="Submit Registration">
       </form>
     </div>
   </div>
